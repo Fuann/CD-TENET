@@ -22,167 +22,445 @@
     <header class="w3-panel w3-center" style="padding:20px 20px 20px 20px;">
         <a href="http://smil.csie.ntnu.edu.tw/"><img style="width:60px; height:auto" src="pics/smil.jpg"></img></a>
         <br>
+        <br>
         <h1>A Time-reversal Enhancement Network with Cross-domain Information for Noise-robust Speech Recognition</h1>
-        <h1 class="w3-large">Authors:  Fu-An Chao, Jeih-weih Hung, Tommy Sheu, Berlin Chen</h1>
+        <br>
+        <p class="w3-large">Authors:  Fu-An Chao, Jeih-weih Hung, Tommy Sheu, Berlin Chen</p>
         <br>
         <hr style="height:1px; border-top:1px solid #555555; width:100%;">
     </header>
 
     <div class="container">
+        <!--Sample 1-->
         <table>
-            <p> Sample 1 - I am now unemployed.</p>
-            <p>(p232_132, DEMAND, 12.5 dB)</p>
-            <br>
+            <p>( Sample 1 )</p>
+            <p>p232_007, -5 dB</p>
             <tr>
                 <th>Clean</th>
                 <th>Noisy</th>
-                <th>PFPL</th>
-                <th>MetricGAN+</th>
-                <th>DCCRN</th>
                 <th>TENET</th>
+                <th>CD-TENET</th>
             </tr>
             <tr>
-                <th><img src="pics/p232_132_clean_spec.png"></img></th>
-                <th><img src="pics/p232_132_noisy_spec.png"></img></th>
-                <th><img src="pics/p232_132_pfpl_spec.png"></img></th>
-                <th><img src="pics/p232_132_metricgan+_spec.png"></img></th>
-                <th><img src="pics/p232_132_dccrn_spec.png"></img></th>
-                <th><img src="pics/p232_132_tenet_spec.png"></img></th>
+                <th><img src="pics/p232_007_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p232_007_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p232_007_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_007_cdtenet_spec(qut).png"></img></th>
             </tr>
             <tr>
-                <th><audio controls style="" src="wavs/p232_132_clean.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_132_noisy.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_132_pfpl.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_132_metricgan+.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_132_dccrn.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_132_tenet.wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_007_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_007_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_007_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_007_cdtenet(qut).wav"> </audio></th>
             </tr>
         </table>
         <br>
         <br>
-        <table>
-            <p> Sample 2 - A deadline is still essential. </p>
-            <p>(p232_203, DEMAND, 2.5 dB)</p>
-            <br>
+        <table style="width: 100%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 2px;">
             <tr>
-                <th>Clean</th>
-                <th>Noisy</th>
-                <th>PFPL</th>
-                <th>MetricGAN+</th>
-                <th>DCCRN</th>
-                <th>TENET</th>
+                <th>Reference:</th>
+                <th>THE  RAINBOW  IS  A  DIVISION  OF  WHITE  LIGHT  INTO  MANY  BEAUTIFUL  COLORS</th>
             </tr>
             <tr>
-                <th><img src="pics/p232_203_clean_spec.png"></img></th>
-                <th><img src="pics/p232_203_noisy_spec.png"></img></th>
-                <th><img src="pics/p232_203_pfpl_spec.png"></img></th>
-                <th><img src="pics/p232_203_metricgan+_spec.png"></img></th>
-                <th><img src="pics/p232_203_dccrn_spec.png"></img></th>
-                <th><img src="pics/p232_203_tenet_spec.png"></img></th>
+                <th>TENET:</th>
+                <th><t style="color: red;">***    ***    ***  THOUGH     WAS</t> OF <t style="color: red;">***    ***    ***  THOUGH     WAS***    ***   WIFE    A      MOVE     GOES</t></th>
             </tr>
             <tr>
-                <th><audio controls style="" src="wavs/p232_203_clean.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_203_noisy.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_203_pfpl.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_203_metricgan+.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_203_dccrn.wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_203_tenet.wav"> </audio></th>
+                <th>CD-TENET:</th>
+                <th>THE <t style="color: red;">WAY   THOUGH</t> IS  A  DIVISION  OF  WHITE  LIGHT  INTO  MANY  BEAUTIFUL  COLORS</th>
             </tr>
         </table>
         <br>
         <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 2-->
         <table>
-            <p> Sample 3 - We have just got to keep this feet on the ground.</p>
-            <p>(p232_415, QUT-NOISE, 15 dB)</p>
-            <br>
+            <p>( Sample 2 )</p>
+            <p>p232_010, 0 dB</p>
             <tr>
                 <th>Clean</th>
                 <th>Noisy</th>
-                <th>PFPL</th>
-                <th>MetricGAN+</th>
-                <th>DCCRN</th>
                 <th>TENET</th>
+                <th>CD-TENET</th>
             </tr>
             <tr>
-                <th><img src="pics/p232_415_clean_spec(qut).png"></img></th>
-                <th><img src="pics/p232_415_noisy_spec(qut).png"></img></th>
-                <th><img src="pics/p232_415_pfpl_spec(qut).png"></img></th>
-                <th><img src="pics/p232_415_metricgan+_spec(qut).png"></img></th>
-                <th><img src="pics/p232_415_dccrn_spec(qut).png"></img></th>
-                <th><img src="pics/p232_415_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_010_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p232_010_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p232_010_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_010_cdtenet_spec(qut).png"></img></th>
             </tr>
             <tr>
-                <th><audio controls style="" src="wavs/p232_415_clean(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_415_noisy(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_415_pfpl(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_415_metricgan+(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_415_dccrn(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p232_415_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_010_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_010_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_010_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_010_cdtenet(qut).wav"> </audio></th>
             </tr>
         </table>
         <br>
         <br>
-        <table>
-            <p> Sample 4 - The rainbow is a division of white light into many beautiful colors.</p>
-            <p>(p257_007, QUT-NOISE, 0 dB)</p>
-            <br>
+        <table style="width: 60%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 2px;">
             <tr>
-                <th>Clean</th>
-                <th>Noisy</th>
-                <th>PFPL</th>
-                <th>MetricGAN+</th>
-                <th>DCCRN</th>
-                <th>TENET</th>
+                <th>Reference:</th>
+                <th>PEOPLE  LOOK  BUT  NO  ONE  EVER  FINDS  IT</th>
             </tr>
             <tr>
-                <th><img src="pics/p257_007_clean_spec(qut).png"></img></th>
-                <th><img src="pics/p257_007_noisy_spec(qut).png"></img></th>
-                <th><img src="pics/p257_007_pfpl_spec(qut).png"></img></th>
-                <th><img src="pics/p257_007_metricgan+_spec(qut).png"></img></th>
-                <th><img src="pics/p257_007_dccrn_spec(qut).png"></img></th>
-                <th><img src="pics/p257_007_tenet_spec(qut).png"></img></th>
+                <th>TENET:</th>
+                <th>PEOPLE  LOOK  <t style="color: red;"> ***  ***  ***   ***   *** ATTENTION</t></th>
             </tr>
             <tr>
-                <th><audio controls style="" src="wavs/p257_007_clean(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_007_noisy(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_007_pfpl(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_007_metricgan+(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_007_dccrn(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_007_tenet(qut).wav"> </audio></th>
+                <th>CD-TENET:</th>
+                <th><t style="color: red;">HE   WILL</t>  LOOK  BUT  NO  ONE  EVER  FINDS  IT</th>
             </tr>
         </table>
         <br>
         <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 3-->
         <table>
-            <p> Sample 5 - When a man looks for something beyond his reach, his friends say he is looking for the pot of gold at the end of the rainbow. </p>
-            <p>(p257_011, QUT-NOISE, 5 dB)</p>
-            <br>
+            <p>( Sample 3 )</p>
+            <p>p232_015, -5 dB</p>
             <tr>
                 <th>Clean</th>
                 <th>Noisy</th>
-                <th>PFPL</th>
-                <th>MetricGAN+</th>
-                <th>DCCRN</th>
                 <th>TENET</th>
+                <th>CD-TENET</th>
             </tr>
             <tr>
-                <th><img src="pics/p257_011_clean_spec(qut).png"></img></th>
-                <th><img src="pics/p257_011_noisy_spec(qut).png"></img></th>
-                <th><img src="pics/p257_011_pfpl_spec(qut).png"></img></th>
-                <th><img src="pics/p257_011_metricgan+_spec(qut).png"></img></th>
-                <th><img src="pics/p257_011_dccrn_spec(qut).png"></img></th>
-                <th><img src="pics/p257_011_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_015_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p232_015_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p232_015_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_015_cdtenet_spec(qut).png"></img></th>
             </tr>
             <tr>
-                <th><audio controls style="" src="wavs/p257_011_clean(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_011_noisy(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_011_pfpl(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_011_metricgan+(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_011_dccrn(qut).wav"> </audio></th>
-                <th><audio controls style="" src="wavs/p257_011_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_015_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_015_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_015_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_015_cdtenet(qut).wav"> </audio></th>
             </tr>
         </table>
-
+        <br>
+        <br>
+        <table style="width: 100%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 2px;">
+            <tr>
+                <th>Reference:</th>
+                <th>THE  GREEKS  USED   TO  IMAGINE  THAT  IT  WAS  A  SIGN  FROM  THE  GODS  TO  FORETELL  WAR  OR  HEAVY  RAIN</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th><t style="color: red;">***    ***    ***  ***     IS    STILL  MOVING  WITH </t>A  SIGN  FROM  THE <t style="color: red;">***    ***    ***   ***  *** </t> OR <t style="color: red;"> ***   BLUE</t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th>THE <t style="color: red;">***  ***  *** </t>IMAGINE  THAT  IT  WAS  A  SIGN  FROM  THE  GODS  TO  FORETELL  WAR  OR  HEAVY  RAIN</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 4-->
+        <table>
+            <p>( Sample 4 )</p>
+            <p>p232_105, 0 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p232_105_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p232_105_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p232_105_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_105_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p232_105_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_105_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_105_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_105_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 30%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 2px;">
+            <tr>
+                <th>Reference:</th>
+                <th>THAT IS NO USE</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th>THAT IS<t style="color: red;"> NOT NEWS </t> </th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th>THAT IS NO USE</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 5-->
+        <table>
+            <p>( Sample 5 )</p>
+            <p>p232_135, -5 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p232_135_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p232_135_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p232_135_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p232_135_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p232_135_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_135_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_135_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p232_135_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 30%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 2px;">
+            <tr>
+                <th>Reference:</th>
+                <th>OUR  INTENTIONS  ARE  REAL</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th><t style="color: red;"> ***      HER     OCCASION  DEWA </t> </th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th><t style="color: red;"> HER </t>INTENTIONS  ARE  REAL</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 6-->
+        <table>
+            <p>( Sample 6 )</p>
+            <p>p257_004, 0 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p257_004_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p257_004_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p257_004_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p257_004_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p257_004_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_004_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_004_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_004_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 90%; table-layout: auto; text-align: left; margin-left: 50px;  
+            margin-right: auto; letter-spacing: 1px;">
+            <tr>
+                <th>Reference:</th>
+                <th>WE  ALSO  NEED  A  SMALL  PLASTIC  SNAKE  AND  A  BIG  TOY  FROG   FOR   THE    KIDS</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th>WE  ALSO  NEED  A  SMALL  PLASTIC  SNAKE  AND  A  BIG<t style="color: red;"> ***   ***  DRAWN   OF  PROGRESS </t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th><t style="color: red;">***</t>  ALSO  NEED  A  SMALL  PLASTIC  SNAKE  AND  A  BIG  TOY  FROG   FOR   THE    KIDS</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 7-->
+        <table>
+            <p>( Sample 7 )</p>
+            <p>p257_009, 0 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p257_009_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p257_009_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p257_009_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p257_009_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p257_009_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_009_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_009_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_009_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 80%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 1px;">
+            <tr>
+                <th>Reference:</th>
+                <th>THERE  IS  ACCORDING  TO  LEGEND  A  BOILING  POT  OF  GOLD   AT  ONE  END</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th>THERE  IS  ACCORDING  TO  LEGEND  A  BOILING  POT  OF  <t style="color: red;">***  ***  ***  HIGHLAND</t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th>THERE  IS  ACCORDING  TO  LEGEND  A  BOILING  POT  OF  GOLD   AT  ONE     END</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 8-->
+        <table>
+            <p>( Sample 8 )</p>
+            <p>p257_028, -5 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p257_028_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p257_028_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p257_028_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p257_028_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p257_028_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_028_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_028_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_028_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 40%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 1px;">
+            <tr>
+                <th>Reference:</th>
+                <th>BECAUSE  WE  DO  NOT  NEED  IT</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th><t style="color: red";>***    ***  IT  COULD   BE   DONE</t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th>BECAUSE  WE  DO  NOT  NEED  IT</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 9-->
+        <table>
+            <p>( Sample 9 )</p>
+            <p>p257_062, -5 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p257_062_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p257_062_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p257_062_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p257_062_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p257_062_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_062_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_062_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_062_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 60%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 1px;">
+            <tr>
+                <th>Reference:</th>
+                <th>THERE  WILL  BE  TOUGH  OPPONENTS  TO  THIS  REPORT</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th><t style="color: red";>*** </t>WILL  BE  TOUGH  OPPONENTS  <t style="color:red">***   ***  REPORTED</t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th><t style="color: red";>*** </t>WILL  BE  TOUGH  OPPONENTS  TO  THIS  REPORT</th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
+        <!--Sample 10-->
+        <table>
+            <p>( Sample 10 )</p>
+            <p>p257_105, -5 dB</p>
+            <tr>
+                <th>Clean</th>
+                <th>Noisy</th>
+                <th>TENET</th>
+                <th>CD-TENET</th>
+            </tr>
+            <tr>
+                <th><img src="pics/p257_105_clean_spec(qut).png"></img></th>
+                <th><img src="pics/p257_105_noisy_spec(qut).png"></img></th>
+                <th><img src="pics/p257_105_tenet_spec(qut).png"></img></th>
+                <th><img src="pics/p257_105_cdtenet_spec(qut).png"></img></th>
+            </tr>
+            <tr>
+                <th><audio controls style="" src="wavs/p257_105_clean(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_105_noisy(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_105_tenet(qut).wav"> </audio></th>
+                <th><audio controls style="" src="wavs/p257_105_cdtenet(qut).wav"> </audio></th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <table style="width: 60%; table-layout: auto; text-align: left; margin-left: 50px; 
+            margin-right: auto; letter-spacing: 1px;">
+            <tr>
+                <th>Reference:</th>
+                <th>I   DIDN'T    PLAY   WELL  LAST   YEAR</th>
+            </tr>
+            <tr>
+                <th>TENET:</th>
+                <th><t style="color: red";>***    ***   HAVEN'T  FROM    A   FOURTH</t></th>
+            </tr>
+            <tr>
+                <th>CD-TENET:</th>
+                <th>I   DIDN'T    PLAY   WELL  LAST   YEAR<th>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <hr style="height:1px; border-top:1px solid #555555; width:100%;">
     </div>
 </body>
 </html>
